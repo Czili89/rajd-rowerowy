@@ -1,4 +1,4 @@
-🚴 Rajd Rowerowy – Panel Admina
+🚴 Rajd Rowerowy 
 
 Prosty projekt szkolny umożliwiający zarządzanie rajdami rowerowymi.
 Aplikacja została stworzona w React i spełnia wszystkie wymagania projektowe: od responsywności po panel admina i eksport danych.
