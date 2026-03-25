@@ -1,74 +1,73 @@
-<<<<<<< HEAD
-# rajd-rowerowy
-=======
-# Getting Started with Create React App
+🚴 Rajd Rowerowy – Panel Admina
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prosty projekt szkolny umożliwiający zarządzanie rajdami rowerowymi.
+Aplikacja została stworzona w React i spełnia wszystkie wymagania projektowe: od responsywności po panel admina i eksport danych.
 
-## Available Scripts
+📋 Wymagania projektu i realizacja
+Wymóg	Realizacja w projekcie
+a) Responsywność	Aplikacja działa na różnych rozdzielczościach, menu mobilne w formie hamburgera.
+b) Możliwość instalacji	Możliwe publikowanie repozytorium na GitHub; projekt można pakować do aplikacji webowej, a przez narzędzia typu Electron lub PWA uruchomić na Windows i Android.
+c) Panel administracyjny	Uproszczony panel do tworzenia rajdów, dodawania i usuwania uczestników.
+d) Dane w chmurze	Wszystkie dane są przechowywane w Firebase Realtime Database.
+e) Ochrona danych	Logowanie do panelu admina, dane przechowywane w Firebase z ograniczonym dostępem.
+f) Czytelny interfejs zapisów	Formularz uczestnika z polami: imię, nazwisko, data urodzenia, numer telefonu z walidacją.
+g) Zarządzanie uczestnikami	Możliwość dopisywania i usuwania zawodników z listy rajdu.
+h) Eksport list uczestników	Możliwość drukowania listy na ekranie oraz eksport do CSV i PDF.
+i) Ostylowany interfejs	Przyjazny layout, kolory, elementy menu dla urządzeń mobilnych.
+j) Repozytorium GitHub i README	Projekt opublikowany w repo: rajd-rowerowy
+ wraz z tym plikiem README.
+k) Paczka instalacyjna	Możliwe utworzenie paczki ZIP do instalacji i publikacji projektu.
+l) Routing	Aplikacja korzysta z React Router do nawigacji między ekranami (Login, Panel admina, Lista rajdów).
 
-In the project directory, you can run:
+🧩 Funkcje projektu
+Dodawanie rajdów z możliwością importu danych z PDF i CSV
+Dodawanie i usuwanie uczestników rajdu
+Walidacja numeru telefonu i poprawności danych uczestnika
+Wyświetlanie listy uczestników w czytelnej tabeli
+Eksport listy do PDF lub CSV oraz drukowanie na ekranie
+Responsywny i ostylowany interfejs z hamburger menu
+Logowanie do panelu admina i ograniczenie dostępu do danych
+Routing między ekranami w aplikacji
 
-### `npm start`
+📦 Struktura projektu
+public/
+  ├── index.html
+  ├── manifest.json
+  └── robots.txt
+src/
+  ├── App.js           # główny komponent
+  ├── Formularz.js     # formularz dodawania uczestników
+  ├── Lista.js         # lista uczestników i rajdów
+  ├── Login.js         # logowanie do panelu
+  ├── ModalRajd.js     # modal szczegółów rajdu
+  ├── Navbar.js        # pasek nawigacji + hamburger menu
+  ├── Navbar.css
+  ├── firebase.js      # konfiguracja Firebase
+  ├── index.js
+  └── index.css
+.env                   # zmienne środowiskowe Firebase
+.gitignore
+package.json
+package-lock.json
+README.md
+🚀 Uruchomienie lokalne
+Sklonuj repozytorium:
+git clone https://github.com/Czili89/rajd-rowerowy.git
+cd rajd-rowerowy
+Zainstaluj zależności:
+npm install
+Utwórz plik .env z konfiguracją Firebase.
+Uruchom aplikację:
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Otwórz przeglądarkę pod adresem http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🛠️ Technologie
+React (frontend)
+React Router (routing)
+Firebase Realtime Database (przechowywanie danych)
+JavaScript / JSX / CSS
+CSV i PDF export
+📄 Licencja
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 9ffc5c3 (Pierwszy zapis projektu)
+Projekt dostępny na licencji MIT.
