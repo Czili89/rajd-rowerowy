@@ -1,0 +1,66 @@
+body {
+  background-color: #f2f4f8; /* lekkie, przyjemne tło */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: #1f3b4d !important; /* ciemny granat */
+}
+
+.navbar-brand {
+  color: #ffdd57 !important; /* złoty akcent */
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.btn-outline-success {
+  color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745 !important;
+  color: white !important;
+}
+
+.btn-outline-danger {
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+
+.card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #1f3b4d;
+}
+
+input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+input.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25);
+}
+
+button.btn {
+  border-radius: 8px;
+}

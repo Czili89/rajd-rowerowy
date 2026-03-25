@@ -1,0 +1,76 @@
+/* Podstawowy gradient dla navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Animowane brand glow */
+.brand-glow {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffea;
+  transition: all 0.3s ease;
+}
+.brand-glow:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #00ffea, 0 0 30px #00ffea, 0 0 40px #00ffea;
+}
+
+/* Przyciski z efektem neon hover */
+.custom-btn {
+  border-width: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,255,234,0.3);
+  transform: skewX(-20deg);
+  transition: all 0.5s;
+}
+
+.custom-btn:hover::before {
+  left: 100%;
+}
+
+.custom-btn:hover {
+  color: #fff;
+  box-shadow: 0 0 15px #00ffea, 0 0 30px #00ffea, 0 0 45px #00ffea;
+}
+
+/* Linki glow */
+.nav-glow {
+  color: #fff;
+  position: relative;
+  transition: all 0.1s ease;
+}
+.nav-glow::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #00ffea;
+  transition: width 0.1s;
+}
+.nav-glow:hover::after {
+  width: 100%;
+}
+.nav-glow:hover {
+  color: #00ffea;
+  text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
+}
+
+/* Drobne animacje collapse */
+.navbar-collapse.collapse.show {
+  animation: slideDown 0.3s ease forwards;
+}
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
